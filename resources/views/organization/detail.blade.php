@@ -31,6 +31,7 @@
                             <td>{{$organization->logo}}</td>
                         </tr>
                     </table>
+                    <h4>List Person</h4>
                     <table class="table">
                         <tbody>
                             @foreach($persons as $person)
