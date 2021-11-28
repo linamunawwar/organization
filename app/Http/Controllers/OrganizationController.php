@@ -33,7 +33,7 @@ class OrganizationController extends Controller
     {
         $organization  = Organization::findOrFail($id);
         $persons = Person::where('organizationId',$id)->get();
-        return view('organization.detail')->with(['organization'=>$organization,'persons'=>$person]);
+        return view('organization.detail')->with(['organization'=>$organization,'persons'=>$persons]);
     }
 
     public function store()
